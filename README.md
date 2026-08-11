@@ -2,7 +2,7 @@
 ## Sri Thottichi Amman Temple, Keezhpavur
 
 **அன்னை தொட்டிச்சி அம்மனின் அருள் நிறைந்த புனிதத் தலம்**  
-📍 **Location:** Keezhpavur, Tirunelveli District, Tamil Nadu, India  
+📍 **Location:** Arayappatti, Pudukkottai District, Tamil Nadu, India  
 🗺️ **Google Maps:** [View on Maps](https://maps.app.goo.gl/US4FuTcsVitYNRyh9)  
 
 ---
