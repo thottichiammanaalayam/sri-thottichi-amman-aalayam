@@ -1,0 +1,203 @@
+/* =============================================
+   HERO / HOME SECTION
+   File: css/hero.css
+   Description: Full-screen hero with Amman image,
+                particles, buttons, scroll indicator
+   Image: images/amman-hero.jpg
+   ============================================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        rgba(139, 0, 0, 0.85),
+        rgba(10, 0, 0, 0.95)
+    );
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+/* --- Floating Particles --- */
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #FFD700;
+    border-radius: 50%;
+    animation: floatUp linear infinite;
+    opacity: 0;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+    }
+    10% { opacity: 0.8; }
+    90% { opacity: 0.8; }
+    100% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 0;
+    }
+}
+
+/* --- Hero Content --- */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+/* --- Amman Image --- */
+.hero-image-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.hero-amman-image {
+    width: 280px;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.5));
+    animation: heroImageFloat 4s ease-in-out infinite;
+}
+
+@keyframes heroImageFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.hero-image-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: glowPulse 3s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes glowPulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+    }
+}
+
+/* --- Hero Text --- */
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #FFD700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-content h2 {
+    font-size: 1.6rem;
+    color: #FF6347;
+    font-weight: 600;
+    margin-bottom: 10px;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.hero-content .location-text {
+    font-size: 1rem;
+    color: #FFE4B5;
+    font-weight: 600;
+    margin-bottom: 15px;
+    animation: fadeInUp 1.3s ease-out;
+}
+
+.hero-content .subtitle {
+    font-size: 1.05rem;
+    color: #ddd;
+    margin-bottom: 35px;
+    line-height: 1.9;
+    animation: fadeInUp 1.4s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Hero Buttons --- */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeInUp 1.6s ease-out;
+}
+
+/* --- Scroll Indicator --- */
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.scroll-indicator .mouse {
+    width: 30px;
+    height: 50px;
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    position: relative;
+}
+
+.scroll-indicator .mouse::before {
+    content: '';
+    width: 4px;
+    height: 10px;
+    background: #FFD700;
+    border-radius: 2px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scrollAnim 2s ease-in-out infinite;
+}
+
+@keyframes scrollAnim {
+    0%, 100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        opacity: 0.3;
+        transform: translateX(-50%) translateY(15px);
+    }
+}

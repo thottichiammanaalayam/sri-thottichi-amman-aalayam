@@ -1,0 +1,166 @@
+/* =============================================
+   CONTACT SECTION
+   File: css/contact.css
+   Description: Contact info, form, Google Maps
+   ============================================= */
+
+.contact-section {
+    background: linear-gradient(135deg, #0a0a0a, #1a0000);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+/* --- Contact Info Cards --- */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: rgba(255, 215, 0, 0.03);
+    padding: 22px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    border-color: #FFD700;
+    transform: translateX(5px);
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.contact-item .icon {
+    font-size: 1.8rem;
+    color: #FFD700;
+    min-width: 40px;
+    text-align: center;
+}
+
+.contact-item h3 {
+    color: #FFD700;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.contact-item p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.map-link {
+    color: #FF6347 !important;
+    text-decoration: underline !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.map-link:hover {
+    color: #FFD700 !important;
+}
+
+/* --- Contact Form --- */
+.contact-form {
+    background: linear-gradient(135deg, #1a0000, #2d0000);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.contact-form h3 {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #FFE4B5;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 14px 18px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Noto Sans Tamil', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #FFD700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #666;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-group select option {
+    background: #1a0000;
+    color: #fff;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #8B0000;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+.form-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+}
+
+/* --- Google Maps Embed --- */
+.map-container {
+    margin-top: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 215, 0, 0.2);
+}
+
+.map-container iframe {
+    display: block;
+}

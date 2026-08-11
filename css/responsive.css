@@ -1,0 +1,253 @@
+/* =============================================
+   RESPONSIVE STYLES
+   File: css/responsive.css
+   Description: All media queries for mobile,
+                tablet, and desktop
+   ============================================= */
+
+/* ===== TABLET (1024px and below) ===== */
+@media (max-width: 1024px) {
+
+    /* Pooja Grid */
+    .pooja-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Gallery Grid */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-item:first-child {
+        grid-row: span 1;
+    }
+
+    /* Footer Grid */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    /* Hero Image */
+    .hero-amman-image {
+        width: 240px;
+        height: 300px;
+    }
+
+    /* Hero Title */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* ===== MOBILE (768px and below) ===== */
+@media (max-width: 768px) {
+
+    /* --- Header --- */
+    .header-container {
+        padding: 10px 15px;
+    }
+
+    .temple-name-header h1 {
+        font-size: 1rem;
+    }
+
+    .temple-name-header p {
+        font-size: 0.6rem;
+    }
+
+    .om-symbol {
+        font-size: 2rem;
+    }
+
+    /* Mobile Navigation */
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(135deg, #8B0000, #5a0000);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li a {
+        padding: 12px 20px;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    /* --- Hero --- */
+    .hero {
+        padding-top: 70px;
+        min-height: 100vh;
+    }
+
+    .hero-amman-image {
+        width: 200px;
+        height: 260px;
+    }
+
+    .hero-image-glow {
+        width: 230px;
+        height: 230px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content .location-text {
+        font-size: 0.9rem;
+    }
+
+    .hero-content .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-tertiary {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    /* --- Sections --- */
+    .section {
+        padding: 60px 15px;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    /* --- About --- */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image-placeholder .about-img {
+        height: 400px;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    /* --- Pooja --- */
+    .pooja-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* --- Gallery --- */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item {
+        height: 180px;
+    }
+
+    /* --- Donation --- */
+    .donation-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .bank-details {
+        padding: 20px;
+    }
+
+    .bank-details td {
+        display: block;
+        padding: 5px 10px;
+    }
+
+    .bank-details td:first-child {
+        width: 100%;
+        padding-top: 12px;
+        border-bottom: none;
+    }
+
+    /* --- Contact --- */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    /* --- Footer --- */
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 40px 15px 20px;
+    }
+}
+
+/* ===== SMALL MOBILE (480px and below) ===== */
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+
+    .hero-amman-image {
+        width: 170px;
+        height: 220px;
+    }
+
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .pooja-card {
+        padding: 25px 20px;
+    }
+
+    .pooja-card .time {
+        font-size: 1.5rem;
+    }
+
+    .donation-card .amount {
+        font-size: 1.6rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .gallery-item {
+        height: 150px;
+    }
+}

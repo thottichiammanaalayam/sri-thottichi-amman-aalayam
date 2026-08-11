@@ -1,0 +1,62 @@
+/* =============================================
+   FESTIVALS SECTION
+   File: css/festivals.css
+   Description: Temple festival cards
+   ============================================= */
+
+.festival-section {
+    background: linear-gradient(135deg, #1a0000, #0a0a0a);
+}
+
+.festival-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.festival-card {
+    background: linear-gradient(135deg, #2d0000, #3d0000);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.festival-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255, 215, 0, 0.15);
+    border-color: #FFD700;
+}
+
+.festival-card-img {
+    height: 200px;
+    background: linear-gradient(135deg, #5a0000, #8B0000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.festival-card-body {
+    padding: 25px;
+}
+
+.festival-card-body h3 {
+    color: #FFD700;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.festival-card-body .date {
+    color: #FF6347;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.festival-card-body p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}

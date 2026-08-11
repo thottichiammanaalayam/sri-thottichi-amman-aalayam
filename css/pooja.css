@@ -1,0 +1,67 @@
+/* =============================================
+   POOJA TIMINGS SECTION
+   File: css/pooja.css
+   Description: Daily pooja schedule cards
+   ============================================= */
+
+.pooja-section {
+    background: linear-gradient(135deg, #0a0a0a, #1a0000);
+}
+
+.pooja-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.pooja-card {
+    background: linear-gradient(135deg, #1a0000, #2d0000);
+    border: 1px solid rgba(255, 215, 0, 0.15);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pooja-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #FFD700, #FF6347, #FFD700);
+}
+
+.pooja-card:hover {
+    transform: translateY(-10px);
+    border-color: #FFD700;
+    box-shadow: 0 20px 50px rgba(255, 215, 0, 0.15);
+}
+
+.pooja-card .time-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.pooja-card h3 {
+    font-size: 1.3rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.pooja-card .time {
+    font-size: 1.8rem;
+    color: #FF6347;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.pooja-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}

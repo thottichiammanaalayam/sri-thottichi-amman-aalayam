@@ -1,0 +1,99 @@
+/* =============================================
+   DONATION SECTION
+   File: css/donation.css
+   Description: Donation cards, bank details
+   ============================================= */
+
+.donation-section {
+    background: linear-gradient(135deg, #1a0000, #2d0000);
+}
+
+.donation-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.donation-intro {
+    color: #ddd;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.donation-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.donation-card {
+    background: linear-gradient(135deg, #2d0000, #3d0000);
+    border: 2px solid rgba(255, 215, 0, 0.15);
+    border-radius: 20px;
+    padding: 35px 25px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.donation-card:hover {
+    border-color: #FFD700;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.15);
+}
+
+.donation-card .amount {
+    font-size: 2rem;
+    color: #FFD700;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.donation-card h3 {
+    color: #FF6347;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.donation-card p {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* --- Bank Details --- */
+.bank-details {
+    background: rgba(255, 215, 0, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.bank-details h3 {
+    color: #FFD700;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.bank-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bank-details td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+.bank-details td:first-child {
+    color: #FFE4B5;
+    font-weight: 600;
+    width: 40%;
+}
